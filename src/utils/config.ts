@@ -10,6 +10,7 @@ export const websiteDescription = `Hi, my name is ${fullName}. I am a full stack
 export const navLinks = [
   { name: 'Home', link: '/' },
   { name: 'Projects', link: '/projects' },
+  { name: 'Blog', link: '/blog' },
   { name: 'Contact', link: '/contact' },
   { name: 'Resume', link: '/resume' }
 ] as const;
