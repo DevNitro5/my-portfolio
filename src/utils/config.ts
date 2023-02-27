@@ -1,17 +1,20 @@
 export const githubName = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
 export const fullName = process.env.NEXT_PUBLIC_FULL_NAME!;
-export const firstName = fullName?.split(' ')[0] ?? 'Hero';
+export const role = process.env.NEXT_PUBLIC_Role!;
 export const linkedinName = process.env.NEXT_PUBLIC_LINKEDIN!;
 export const twitterName = process.env.NEXT_PUBLIC_TWITTER!;
 export const discordId = process.env.NEXT_PUBLIC_DISCORD_ID!;
 export const country = process.env.NEXT_PUBLIC_COUNTRY_NAME!;
 export const brandName = process.env.NEXT_PUBLIC_BRAND_NAME!;
 export const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL!;
-export const websiteDescription = `Hi, my name is ${fullName}. I am a full stack developer from ${country} who also loves doing open source projects.`;
+export const websiteDescription = `Hi, my name is ${fullName}. I am a ${role} developer from ${country} who also loves doing open source projects.`;
+export const themeColor = '#ED653A';
+export const favIcon = '/A.png';
+
 export const navLinks = [
   { name: 'Home', link: '/' },
   { name: 'Projects', link: '/projects' },
-  { name: 'Blog', link: '/blog' },
+  { name: 'Blogs', link: '/blog' },
   { name: 'Contact', link: '/contact' },
   { name: 'Resume', link: '/resume' }
 ] as const;

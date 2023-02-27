@@ -30,9 +30,7 @@ export function NavbarLinkMobile(props: IProps) {
       href={props.link}
       className={twMerge(
         'lg:hidden p-3 w-full rounded-md cursor-pointer font-semibold no-underline transition ease-in duration-300',
-        props.active
-          ? 'bg-red text-white'
-          : 'hover:bg-red hover:text-white bg-transparent text-red'
+        props.active ? 'bg-red text-white' : 'hover:bg-red hover:text-white bg-transparent text-red'
       )}
     >
       {props.name}

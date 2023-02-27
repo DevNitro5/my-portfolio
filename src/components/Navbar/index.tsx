@@ -1,12 +1,12 @@
 'use client';
 
-import { itemVariant, navLinks } from '@/utils/config';
+import { navLinks } from '@/utils/config';
 import { usePathname } from 'next/navigation';
 import { NavbarBrand } from './NavbarBrand';
 import { NavbarLink, NavbarLinkMobile } from './NavLink';
 import { HiMenu, HiX } from 'react-icons/hi';
 import Link from 'next/link';
-import { SiGithub } from 'react-icons/si';
+import { SiDiscord, SiGithub } from 'react-icons/si';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -25,7 +25,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className={`pt-7 text-light px-4 flex justify-between items-center ${navOpen ? 'bg-darkGray' : ''}`}>
+      <nav className={`text-light px-7 pt-7 flex justify-between items-center ${navOpen ? 'bg-darkGray' : ''}`}>
         <NavbarBrand />
         <div className="items-center space-x-16 hidden lg:flex">
           {navLinks.map((link, i) => {
@@ -36,11 +36,10 @@ export function Navbar() {
           <Link href="/github" target="_blank">
             <SiGithub className="h-6 w-6 cursor-pointer text-light hover:text-gray transition duration-200 ease-in" />
           </Link>
-
           {navOpen ? (
-            <HiX className="h-7 w-7 lg:hidden" onClick={toggleNav} />
+            <HiX className="h-7 w-7 lg:hidden cursor-pointer" onClick={toggleNav} />
           ) : (
-            <HiMenu className="h-7 w-7 lg:hidden" onClick={toggleNav} />
+            <HiMenu className="h-7 w-7 lg:hidden cursor-pointer" onClick={toggleNav} />
           )}
         </div>
       </nav>

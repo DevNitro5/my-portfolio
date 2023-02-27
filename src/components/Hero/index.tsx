@@ -1,6 +1,6 @@
 'use client';
 
-import { country, fullName, itemVariant } from '@/utils/config';
+import { country, fullName, itemVariant, role } from '@/utils/config';
 import { FiFileText } from 'react-icons/fi';
 import { ProgrammerSvg } from '../Art/ProgrammerSvg';
 import { Button } from '../Button';
@@ -33,7 +33,7 @@ export function Hero() {
             ,
           </h1>
           <p className="text-gray text-lg lg:text-2xl lg:max-w-[60%]">
-            a <span className="font-bold text-light">front-end developer</span> from{' '}
+            a <span className="font-bold text-light">{role} developer</span> from{' '}
             <span className="text-light font-bold">{country}</span> who loves doing open source projects.
           </p>
         </div>

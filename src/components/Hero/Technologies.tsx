@@ -1,6 +1,6 @@
 'use client';
 
-import { SiSvelte, SiReact, SiTailwindcss, SiTypescript, SiVercel, SiVisualstudiocode } from 'react-icons/si';
+import { SiReact, SiTailwindcss, SiTypescript, SiSvelte, SiVisualstudiocode } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import { itemVariant } from '@/utils/config';
 
@@ -14,7 +14,7 @@ export function Technologies() {
         <motion.a variants={itemVariant} href="https://typescriptlang.org" target="_blank" rel="noreferrer">
           <SiTypescript
             title="TypeScript"
-            className="transition ease-in duration-300 h-7 w-7 cursor-pointer text-gray hover:text-blue-400"
+            className="transition ease-in duration-300 h-7 w-7 cursor-pointer text-gray hover:text-sky-500"
           />
         </motion.a>
         <motion.a variants={itemVariant} href="https://tailwindcss.com" target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ export function Technologies() {
             className="transition ease-in duration-300 h-7 w-7 cursor-pointer text-gray hover:text-sky-500"
           />
         </motion.a>
-        <motion.a variants={itemVariant} href="https://svelte.dev" target="_blank" rel="noreferrer">
+        <motion.a variants={itemVariant} href="https://git-scm.com" target="_blank" rel="noreferrer">
           <SiSvelte
             title="Svelte"
             className="transition ease-in duration-300 h-7 w-7 cursor-pointer text-gray hover:text-red"
