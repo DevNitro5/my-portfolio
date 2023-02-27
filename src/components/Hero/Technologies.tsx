@@ -29,7 +29,7 @@ export function Technologies() {
             className="transition ease-in duration-300 h-7 w-7 cursor-pointer text-gray hover:text-sky-500"
           />
         </motion.a>
-        <motion.a variants={itemVariant} href="https://git-scm.com" target="_blank" rel="noreferrer">
+        <motion.a variants={itemVariant} href="https://svelte.dev" target="_blank" rel="noreferrer">
           <SiSvelte
             title="Svelte"
             className="transition ease-in duration-300 h-7 w-7 cursor-pointer text-gray hover:text-red"
