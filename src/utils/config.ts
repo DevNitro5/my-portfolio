@@ -1,7 +1,6 @@
 export const githubName = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
 export const fullName = process.env.NEXT_PUBLIC_FULL_NAME!;
 export const role = process.env.NEXT_PUBLIC_ROLE!;
-console.log(role);
 export const linkedinName = process.env.NEXT_PUBLIC_LINKEDIN!;
 export const twitterName = process.env.NEXT_PUBLIC_TWITTER!;
 export const discordId = process.env.NEXT_PUBLIC_DISCORD_ID!;

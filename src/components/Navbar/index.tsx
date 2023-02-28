@@ -25,7 +25,9 @@ export function Navbar() {
 
   return (
     <>
-      <nav className={`text-light px-7 pt-7 flex justify-between items-center ${navOpen ? 'bg-darkGray' : ''}`}>
+      <nav
+        className={`text-light px-7 pt-7 flex justify-between items-center ${navOpen ? 'bg-darkGray lg:bg-black' : ''}`}
+      >
         <NavbarBrand />
         <div className="items-center space-x-16 hidden lg:flex">
           {navLinks.map((link, i) => {
@@ -46,7 +48,7 @@ export function Navbar() {
       <motion.div
         animate={navOpen ? 'open' : 'closed'}
         variants={variants}
-        className={navOpen ? 'h-screen bg-darkGray flex flex-col p-3 space-y-3' : 'hidden'}
+        className={navOpen ? 'h-screen bg-darkGray flex flex-col p-3 space-y-3 pt-10 lg:hidden' : 'hidden'}
       >
         {navLinks.map((link, i) => {
           return <NavbarLinkMobile key={i} {...link} active={path === link.link} />;
