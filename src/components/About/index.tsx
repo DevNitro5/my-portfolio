@@ -7,7 +7,7 @@ export function About() {
   return (
     <>
       <Wave />
-      <footer className="bg-darkRed w-full flex items-center justify-center h-[15rem]">
+      <footer className="bg-darkRed w-full flex items-center justify-center h-[15rem] px-7">
         <div className="lg:max-w-[50%] flex flex-col space-y-5 items-center justify-center">
           <h1 className="text-center text-white font-semibold text-4xl">About Me</h1>
           <p className="text-white text-center text-base md:text-lg lg:text-xl">{websiteDescription}</p>

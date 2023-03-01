@@ -17,35 +17,28 @@ export function Button(props: IProps) {
   const { children, variant = 'primary', link, rounded = false, newtab = false, onClick } = props;
 
   const className =
-    variant === 'primary'
+    'p-3 transition ease-in-out duration-200 font-semibold ' +
+    (variant === 'primary'
       ? 'bg-red hover:bg-darkRed text-white'
       : variant === 'secondary'
       ? 'bg-transparent text-light hover:text-white'
-      : 'bg-darkGray text-light hover:text-white hover:bg-dark';
+      : 'bg-darkGray text-light hover:text-white hover:bg-dark');
 
   if (!link)
     return (
       <motion.button
         variants={itemVariant}
         onClick={onClick}
-        className={twMerge(
-          className,
-          rounded ? 'rounded-lg' : '',
-          'font-semibold cursor-pointer p-3 transition ease-in-out duration-200'
-        )}
+        className={twMerge(className, rounded ? 'rounded-lg' : '')}
       >
         {children}
       </motion.button>
     );
 
   return (
-    <motion.div variants={itemVariant} className={twMerge('inline-block')}>
+    <motion.div variants={itemVariant} className={twMerge('inline-block text-center')}>
       <Link
-        className={twMerge(
-          className,
-          rounded ? 'rounded-lg' : '',
-          'inline-block font-semibold p-3 transition ease-in-out duration-200'
-        )}
+        className={twMerge(className, rounded ? 'rounded-lg' : '', 'inline-block')}
         href={link}
         target={newtab ? '_blank' : undefined}
       >
