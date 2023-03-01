@@ -39,18 +39,18 @@ export function Button(props: IProps) {
     );
 
   return (
-    <motion.button
-      variants={itemVariant}
-      className={twMerge(
-        className,
-        rounded ? 'rounded-lg' : '',
-        'font-semibold cursor-pointer p-3 transition ease-in-out duration-200'
-      )}
-      onClick={onClick}
-    >
-      <Link href={link} target={newtab ? '_blank' : undefined}>
+    <motion.div variants={itemVariant} className={twMerge('inline-block')}>
+      <Link
+        className={twMerge(
+          className,
+          rounded ? 'rounded-lg' : '',
+          'inline-block font-semibold p-3 transition ease-in-out duration-200'
+        )}
+        href={link}
+        target={newtab ? '_blank' : undefined}
+      >
         {children}
       </Link>
-    </motion.button>
+    </motion.div>
   );
 }
